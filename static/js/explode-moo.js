@@ -112,8 +112,8 @@ window.addEvent("domready", function() {
     // If we support this browser....
     if (cssPrefix) {
         // 300 x 233
-        var cols = 36; // Desired columns
-        var rows = 20; // Desired rows
+        var cols = 27; // Desired columns
+        var rows = 15; // Desired rows
         var totalWidth = width; // Logo width
         var totalHeight = height; // Logo height
         var singleWidth = totalWidth / cols; // Shard width
