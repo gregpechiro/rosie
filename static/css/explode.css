@@ -1,0 +1,19 @@
+a#homeLogo	{
+	/*width:1366px;
+	height:659px;
+	background-size: 1366px 659px;*/
+	text-indent:-3000px;
+	background:url(../img/wrapping2.jpg) 0 0 no-repeat;
+	display:block;
+	z-index:2;
+}
+a#homeLogo span {
+	/*background-size: 1366px 659px;*/
+	float:left;
+	display:block;
+	background-image:url(../img/wrapping3.jpg);
+	background-repeat:no-repeat;
+	top: 0;
+	position: absolute;
+}
+.clear { clear:both; }
