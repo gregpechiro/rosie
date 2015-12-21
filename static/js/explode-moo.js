@@ -5,11 +5,30 @@ var zeros = {
     z: 0
 };
 
+var rip0 = new Audio('static/snd/rip-0.mp3');
+var rip1 = new Audio('static/snd/rip-1.mp3');
+var rip2 = new Audio('static/snd/rip-2.mp3');
+var rip3 = new Audio('static/snd/rip-3.mp3');
+var rip4 = new Audio('static/snd/rip-4.mp3');
+var rip5 = new Audio('static/snd/rip-5.mp3');
+var rip6 = new Audio('static/snd/rip-6.mp3');
+var rip7 = new Audio('static/snd/rip-7.mp3');
+var rip8 = new Audio('static/snd/rip-8.mp3');
+var rip9 = new Audio('static/snd/rip-9.mp3');
+
+var rips = [rip0, rip1, rip2, rip3, rip4, rip5, rip6, rip7, rip8, rip9];
+
+function playRip() {
+    var i = Math.floor((Math.random() * 10));
+    rips[i].play();
+}
+
 // Implement animation methods on the element prototype
 Element.implement({
 
     // Scatter elements all over the place
     scatter: function() {
+        playRip();
         return $(this).trans({
             x: Number.random(-1000, 1000),
             y: Number.random(-1000, 1000),
